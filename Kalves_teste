@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Catálogo Klaves - Ofertas Mercado Livre</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { background: #f8f9fa; font-family: 'Segoe UI', sans-serif; }
+        h1 { text-align: center; padding: 30px 15px; color: #1a1a1a; font-size: 1.8rem; }
+        .carousel {
+            display: flex;
+            overflow-x: auto;
+            scroll-snap-type: x mandatory;
+            padding: 20px;
+            gap: 18px;
+            scroll-behavior: smooth;
+            -webkit-overflow-scrolling: touch;
+        }
+        .product {
+            flex: 0 0 240px;
+            background: white;
+            border-radius: 16px;
+            overflow: hidden;
+            box-shadow: 0 6px 16px rgba(0,0,0,0.08);
+            transition: all 0.3s ease;
+            text-align: center;
+        }
+        .product:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 12px 24px rgba(0,0,0,0.15);
+        }
+        .product img {
+            width: 100%;
+            height: 180px;
+            object-fit: contain;
+            background: #fff;
+            padding: 10px;
+        }
+        .buy-btn {
+            display: block;
+            background: #ffe600;
+            color: #000;
+            text-decoration: none;
+            font-weight: bold;
+            padding: 12px;
+            font-size: 0.95rem;
+            transition: 0.2s;
+        }
+        .buy-btn:hover {
+            background: #ffcd00;
+        }
+        .carousel::-webkit-scrollbar { height: 8px; }
+        .carousel::-webkit-scrollbar-track { background: #eee; border-radius: 4px; }
+        .carousel::-webkit-scrollbar-thumb { background: #ccc; border-radius: 4px; }
+    </style>
+</head>
+<body>
+    <h1>Catálogo Klaves - Melhores Ofertas</h1>
+    <div class="carousel">
+
+        <!-- PRODUTO 1: Fone Bluetooth JBL -->
+        <div class="product">
+            <a href="https://mercadolivre.com.br/oferta-fone-jbl?aff_id=SEU_ID_AQUI" target="_blank">
+                <img src="https://http2.mlstatic.com/D_Q_NP_2X_987654-MLA123456789.jpg" alt="Fone JBL">
+            </a>
+            <a href="https://mercadolivre.com.br/oferta-fone-jbl?aff_id=SEU_ID_AQUI" class="buy-btn" target="_blank">
+                Comprar Agora
+            </a>
+        </div>
+
+        <!-- PRODUTO 2: Smart TV 50" -->
+        <div class="product">
+            <a href="https://mercadolivre.com.br/smart-tv-50?aff_id=SEU_ID_AQUI" target="_blank">
+                <img src="https://http2.mlstatic.com/D_Q_NP_2X_654321-MLA987654321.jpg" alt="Smart TV">
+            </a>
+            <a href="https://mercadolivre.com.br/smart-tv-50?aff_id=SEU_ID_AQUI" class="buy-btn" target="_blank">
+                Comprar Agora
+            </a>
+        </div>
+
+        <!-- PRODUTO 3: Cafeteira Nespresso -->
+        <div class="product">
+            <a href="https://mercadolivre.com.br/cafeteira-nespresso?aff_id=SEU_ID_AQUI" target="_blank">
+                <img src="https://http2.mlstatic.com/D_Q_NP_2X_789123-MLA456789123.jpg" alt="Cafeteira">
+            </a>
+            <a href="https://mercadolivre.com.br/cafeteira-nespresso?aff_id=SEU_ID_AQUI" class="buy-btn" target="_blank">
+                Comprar Agora
+            </a>
+        </div>
+
+        <!-- ADICIONE MAIS PRODUTOS AQUI (copie o bloco acima) -->
+
+    </div>
+</body>
+</html>
